@@ -4,10 +4,28 @@ import (
 	"net/http"
 
 	controllers "github.com/MantisSTS/BountyProcess/server/controllers"
+	helpers "github.com/MantisSTS/BountyProcess/server/helpers"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+
+	// Create all the necessary queues
+	rmq := helpers.RabbitMQHelper{}
+	rmq.CreateQueue("init", "domain")
+	rmq.CreateQueue("init", "subdomain")
+	rmq.CreateQueue("init", "waf")
+	rmq.CreateQueue("init", "crawler")
+	rmq.CreateQueue("init", "screenshot")
+	rmq.CreateQueue("init", "whois")
+	rmq.CreateQueue("init", "dns")
+	rmq.CreateQueue("init", "nmap")
+	rmq.CreateQueue("init", "ssl")
+	rmq.CreateQueue("init", "http")
+	rmq.CreateQueue("init", "js")
+	rmq.CreateQueue("init", "nuclei")
+	rmq.CreateQueue("init", "wayback")
+	rmq.CreateQueue("init", "github")
 
 	gin.SetMode(gin.DebugMode)
 	r := gin.Default()
