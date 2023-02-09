@@ -1,0 +1,13 @@
+{"name":"cybershade.org","domain":"cybershade.org","addresses":[{"ip":"88.198.86.233","cidr":"88.198.0.0/16","asn":24940,"desc":"HETZNER-AS"}],"tag":"dns","sources":["DNS","Ask","Searchcode","Bing","Yahoo","DuckDuckGo","HyperStat","CertSpotter"]}
+{"name":"www.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"88.198.86.233","cidr":"88.198.0.0/16","asn":24940,"desc":"HETZNER-AS"}],"tag":"cert","sources":["AlienVault","Bing","SiteDossier","Yahoo","Baidu","Ask","RapidDNS","Wayback","Crtsh"]}
+{"name":"gemini.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"178.79.143.66","cidr":"178.79.128.0/18","asn":63949,"desc":"LINODE-AP Linode, LLC"}],"tag":"api","sources":["HackerTarget"]}
+{"name":"orion.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"88.198.86.233","cidr":"88.198.0.0/16","asn":24940,"desc":"HETZNER-AS"}],"tag":"scrape","sources":["AlienVault","RapidDNS"]}
+{"name":"electra.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"178.79.179.226","cidr":"178.79.128.0/18","asn":63949,"desc":"LINODE-AP Linode, LLC"}],"tag":"scrape","sources":["Riddler"]}
+{"name":"romy.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"88.198.86.234","cidr":"88.198.0.0/16","asn":24940,"desc":"HETZNER-AS"}],"tag":"api","sources":["HackerTarget","RapidDNS"]}
+{"name":"packages.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"88.198.86.233","cidr":"88.198.0.0/16","asn":24940,"desc":"HETZNER-AS"}],"tag":"api","sources":["AlienVault"]}
+{"name":"radio.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"88.198.86.233","cidr":"88.198.0.0/16","asn":24940,"desc":"HETZNER-AS"}],"tag":"api","sources":["AlienVault"]}
+{"name":"ufibb.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"88.198.86.233","cidr":"88.198.0.0/16","asn":24940,"desc":"HETZNER-AS"}],"tag":"api","sources":["AlienVault"]}
+{"name":"infy.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"88.198.86.233","cidr":"88.198.0.0/16","asn":24940,"desc":"HETZNER-AS"}],"tag":"api","sources":["AlienVault"]}
+{"name":"ts3.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"88.198.86.233","cidr":"88.198.0.0/16","asn":24940,"desc":"HETZNER-AS"}],"tag":"archive","sources":["Wayback"]}
+{"name":"mc.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"88.198.86.235","cidr":"88.198.0.0/16","asn":24940,"desc":"HETZNER-AS"}],"tag":"dns","sources":["HackerTarget","Reverse DNS"]}
+{"name":"daedalus.cybershade.org","domain":"cybershade.org","addresses":[{"ip":"213.239.193.203","cidr":"213.239.192.0/20","asn":24940,"desc":"HETZNER-AS"}],"tag":"api","sources":["HackerTarget"]}
