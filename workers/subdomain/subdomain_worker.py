@@ -17,7 +17,7 @@ def consume_queue():
     print(' [*] Waiting for messages. To exit press CTRL+C')
     
     connection = pika.BlockingConnection(
-        pika.ConnectionParameters(host="192.168.0.20", port=5672)
+        pika.ConnectionParameters(host="192.168.0.20", port=5672, heartbeat=600)
     )
     channel = connection.channel()
     channel.basic_consume(queue='domain', on_message_callback=run_task, consumer_tag='subdomain_worker')
@@ -65,8 +65,8 @@ def run_task(ch, method, properties, msg):
                 lines = f.readlines()
                 for line in lines:
                     if line not in unique_results:
+                        line = line.strip()
                         unique_results.append(line)
-
                         # Publish the results to the queue
                         ch.basic_publish(exchange='', routing_key='subdomain', body=line)
 
@@ -80,7 +80,7 @@ def run_task(ch, method, properties, msg):
 
     # Send the results to the API
     r = requests.put('http://192.168.0.20:6123/api/v1/domain/subdomain/create', json={'domains': unique_results})
-    
+
     if r.status_code == 200:
         print("[+] Successfully sent results to API")
 
@@ -98,8 +98,8 @@ def main():
     rabbitmq_pass = args.rmq_pass
     api_server = args.api_server
     
-    # while True:
-    consume_queue()
+    while True:
+        consume_queue()
 
 if __name__ == '__main__':
     try:
