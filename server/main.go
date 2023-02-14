@@ -45,6 +45,7 @@ func main() {
 		{
 			dc := controllers.DomainController{}
 			domain.PUT("/create", dc.Create)
+			domain.PUT("/subdomain/create", dc.CreateSubdomain)
 		}
 	}
 
